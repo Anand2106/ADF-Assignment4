@@ -1,0 +1,41 @@
+{
+	"name": "StringifySource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "stringify.json",
+				"fileSystem": "stringify"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"age": {
+					"type": "string"
+				},
+				"contact": {
+					"type": "object",
+					"properties": {
+						"mobile": {
+							"type": "string"
+						},
+						"landline": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

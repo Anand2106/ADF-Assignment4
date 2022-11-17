@@ -1,0 +1,9 @@
+{
+	"name": "AnandADF11",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a75d5667-6b4b-4f3f-b6ce-acf2a73e1e43",
+		"tenantId": "b2ea6a73-b7a6-4daa-bc49-08d657b5bda4"
+	}
+}
