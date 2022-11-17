@@ -1,0 +1,8 @@
+empid,empname,gender,deptid
+101,monish,male,1
+102,anand,male,1
+103,koushik,male,2
+104,rani,female,1
+105,rohini,female,2
+106,raja,male,3
+107,rubi,female,4
