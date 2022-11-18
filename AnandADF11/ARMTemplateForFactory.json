@@ -142,11 +142,11 @@
 								"type": "AzureBlobStorageReadSettings",
 								"recursive": true,
 								"modifiedDatetimeStart": {
-									"value": "@addHours(startOfHour(utcNow()),-6)",
+									"value": "@addDays(startOfDay(utcNow()),-1)",
 									"type": "Expression"
 								},
 								"modifiedDatetimeEnd": {
-									"value": "@startOfHour(addMinutes(utcNow(),-30))",
+									"value": "@addHours(startOfHour(utcNow()),-1)",
 									"type": "Expression"
 								},
 								"enablePartitionDiscovery": false
@@ -879,7 +879,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/2pm_ScheduleTrigger')]",
+			"name": "[concat(parameters('factoryName'), '/11am_ScheduleTrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -899,8 +899,9 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2022-11-17T08:30:00Z",
-						"timeZone": "UTC"
+						"startTime": "2022-11-18T05:30:00Z",
+						"timeZone": "UTC",
+						"schedule": {}
 					}
 				}
 			},

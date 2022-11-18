@@ -539,11 +539,11 @@
 								"type": "AzureBlobStorageReadSettings",
 								"recursive": true,
 								"modifiedDatetimeStart": {
-									"value": "@addHours(startOfHour(utcNow()),-6)",
+									"value": "@addDays(startOfDay(utcNow()),-1)",
 									"type": "Expression"
 								},
 								"modifiedDatetimeEnd": {
-									"value": "@startOfHour(addMinutes(utcNow(),-30))",
+									"value": "@addHours(startOfHour(utcNow()),-1)",
 									"type": "Expression"
 								},
 								"enablePartitionDiscovery": false
