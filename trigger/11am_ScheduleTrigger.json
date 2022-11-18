@@ -1,5 +1,5 @@
 {
-	"name": "2pm_ScheduleTrigger",
+	"name": "11am_ScheduleTrigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2022-11-17T08:30:00Z",
+				"startTime": "2022-11-18T05:30:00Z",
 				"timeZone": "UTC"
 			}
 		}
